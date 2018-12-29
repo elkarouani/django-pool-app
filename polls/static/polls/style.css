@@ -1,3 +1,10 @@
-li a {
+body
+{
+	background: white url("images/cat.png") no-repeat;
+}
+
+
+li a 
+{
 	color: green;
 }
