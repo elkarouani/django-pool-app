@@ -1,11 +1,11 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<link rel="stylesheet" href="{% static 'polls/css/output.css' %}">
 
 {% if latest_question_list %}
   <ul>
     {% for question in latest_question_list %}
-      <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+      <li class="p-10 text-red-500 hover:text-white hover:bg-black"><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
   </ul>
 {% else %}

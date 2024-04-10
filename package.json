@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i polls/static/polls/tw/style.css -o polls/static/polls/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
